@@ -4,19 +4,89 @@
     "x": 0,
     "y": 0,
     "uniqueID": 731605,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Shape",
+            "ioValue": 10
+        },
+        {
+            "name": "Amount To Inset",
+            "ioValue": 1
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
+        {
+            "atomType": "Input",
+            "name": "Shape",
+            "x": 0.013333333333333334,
+            "y": 0.38782051282051283,
+            "uniqueID": 732728,
+            "ioValues": []
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.3035714285714286,
+            "y": 0.3076923076923077,
+            "uniqueID": 706063,
+            "ioValues": [
+                {
+                    "name": "Input1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Input2",
+                    "ioValue": 1
+                }
+            ],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1, Input2){\n  return Input1.inset(Input2);        //return must be geometry;\n}\n\nreturn main(Input1, Input2)"
+        },
+        {
+            "atomType": "Input",
+            "name": "Amount To Inset",
+            "x": 0.013333333333333334,
+            "y": 0.6025641025641025,
+            "uniqueID": 307641,
+            "ioValues": []
+        },
         {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9867724867724867,
             "y": 0.5,
             "uniqueID": 343926,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/731605/706063Code"
+                }
+            ]
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Input1",
+            "ap2Primary": false,
+            "ap1ID": 732728,
+            "ap2ID": 706063
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 706063,
+            "ap2ID": 343926
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Input2",
+            "ap2Primary": false,
+            "ap1ID": 307641,
+            "ap2ID": 706063
+        }
+    ],
     "fileTypeVersion": 1,
     "simplify": false,
     "unitsIndex": 0,
