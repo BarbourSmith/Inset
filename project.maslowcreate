@@ -27,9 +27,9 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.3035714285714286,
-            "y": 0.3076923076923077,
-            "uniqueID": 706063,
+            "x": 0.3597883597883598,
+            "y": 0.46474358974358976,
+            "uniqueID": 715304,
             "ioValues": [
                 {
                     "name": "Input1",
@@ -40,7 +40,7 @@
                     "ioValue": 1
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1, Input2){\n  return Input1.inset(Input2);        //return must be geometry;\n}\n\nreturn main(Input1, Input2)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1, Input2];\n\n\nreturn Input1.inset(Input2);        //return must be geometry;"
         },
         {
             "atomType": "Input",
@@ -59,7 +59,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/731605/706063Code"
+                    "ioValue": "source/731605/715304Code"
                 }
             ]
         }
@@ -70,13 +70,13 @@
             "ap2Name": "Input1",
             "ap2Primary": false,
             "ap1ID": 732728,
-            "ap2ID": 706063
+            "ap2ID": 715304
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 706063,
+            "ap1ID": 715304,
             "ap2ID": 343926
         },
         {
@@ -84,7 +84,7 @@
             "ap2Name": "Input2",
             "ap2Primary": false,
             "ap1ID": 307641,
-            "ap2ID": 706063
+            "ap2ID": 715304
         }
     ],
     "fileTypeVersion": 1,
